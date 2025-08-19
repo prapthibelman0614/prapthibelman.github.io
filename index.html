@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prapthi Belman | Front-End Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Prapthi Belman — Front-End Developer & UI/UX Designer. Projects, experience, and contact information." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner container">
+      <a class="brand" href="#hero" aria-label="Go to home">PB</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="navToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navbarMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="navbarMenu" class="nav-menu container" role="dialog" aria-modal="true" aria-labelledby="navToggle">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="section hero fade-in" role="banner">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Prapthi Belman</h1>
+      <p class="hero-subtitle">Front-End Developer & UI/UX Designer</p>
+      <p class="hero-blurb">
+        Graduate student at Texas A&amp;M (MIS, 3.86 GPA) with experience in full-stack web development,
+        UX optimization, and product strategy. I build accessible, performant, and delightful web experiences.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Skills -->
+  <section id="skills" class="section fade-in" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 id="skills-heading" class="section-title">Skills</h2>
+
+      <h3 class="group-title">Product &amp; PM</h3>
+      <ul class="pill-list">
+        <li>Requirements Gathering</li>
+        <li>Agile (Scrum/Kanban)</li>
+        <li>User Research</li>
+        <li>Accessibility (WCAG 2.1)</li>
+        <li>SEO</li>
+        <li>A/B Thinking &amp; KPIs</li>
+        <li>Jira · Confluence · Notion</li>
+        <li>Figma · Adobe</li>
+      </ul>
+
+      <h3 class="group-title">Technical</h3>
+      <ul class="pill-list">
+        <li>HTML5 · CSS3 · JavaScript</li>
+        <li>React · Angular · Bootstrap</li>
+        <li>SQL · NoSQL</li>
+        <li>ASP.NET Core · EF Core</li>
+        <li>AWS · CI/CD · Git</li>
+        <li>Docker · Kubernetes</li>
+        <li>WordPress · WP Engine</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section fade-in" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading" class="section-title">Projects</h2>
+
+      <article class="card project">
+        <div class="card-body">
+          <h3 class="card-title">Digital Product Strategy &amp; MVP Planning</h3>
+          <p class="card-text">
+            Built a product canvas covering value propositions, user journeys, and MVP logic to guide cross-functional
+            delivery and align teams on outcomes.
+          </p>
+          <!-- <a class="card-link" href="#" target="_blank" rel="noopener">Live Demo</a> -->
+          <!-- <a class="card-link" href="#" target="_blank" rel="noopener">GitHub</a> -->
+        </div>
+      </article>
+
+      <article class="card project">
+        <div class="card-body">
+          <h3 class="card-title">POS System Implementation &amp; Optimization</h3>
+          <p class="card-text">
+            Deployed a POS integrating MariaDB &amp; MongoDB; automated ETL for 10,000+ monthly transactions and
+            improved reporting accuracy by 25%.
+          </p>
+        </div>
+      </article>
+
+      <article class="card project">
+        <div class="card-body">
+          <h3 class="card-title">Business Continuity &amp; Project Risk Management</h3>
+          <p class="card-text">
+            Authored DR/BC plans with Gantt &amp; PERT schedules; implemented risk monitoring to ensure ~99% uptime and
+            reliable delivery under disruptions.
+          </p>
+        </div>
+      </article>
+
+      <article class="card project">
+        <div class="card-body">
+          <h3 class="card-title">Software Requirements Specification (SRS)</h3>
+          <p class="card-text">
+            Wrote comprehensive SRS for ONIX data transformation &amp; Print-on-Demand workflows, defining functional
+            and non-functional requirements and system architecture.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section fade-in" aria-labelledby="exp-heading">
+    <div class="container">
+      <h2 id="exp-heading" class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <article class="tl-item">
+          <h3 class="tl-role">Graduate Assistant Teaching · Texas A&amp;M University</h3>
+          <p class="tl-meta">College Station, TX · Present</p>
+          <ul class="tl-points">
+            <li>Guided 500+ students building web apps (SQL, ASP.NET Core MVC, EF Core) with agile, phase-based delivery.</li>
+            <li>Raised test scores by 14% via HTML/CSS/JS study guides, interactive discussions, and targeted feedback.</li>
+          </ul>
+        </article>
+
+        <article class="tl-item">
+          <h3 class="tl-role">Web Student Technician · Mays Business School</h3>
+          <p class="tl-meta">College Station, TX · Aug 2025</p>
+          <ul class="tl-points">
+            <li>Audited 700+ pages for UX, accessibility (WCAG 2.1), and SEO; boosted findability by 18%.</li>
+            <li>Owned web ops: prioritized 30+ projects, triaged issues, coordinated cross-functional contributors.</li>
+            <li>Troubleshot plugin/PHP issues; delivered updates on schedule.</li>
+          </ul>
+        </article>
+
+        <article class="tl-item">
+          <h3 class="tl-role">Full-Stack Software Engineer · Cognizant</h3>
+          <p class="tl-meta">Bengaluru, India · May 2024</p>
+          <ul class="tl-points">
+            <li>Built responsive UIs and optimized databases; +12% user engagement, +18% system performance.</li>
+            <li>Converted complex workflows into client-ready docs; −15% delivery timelines, fewer long-term defects.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section fade-in" aria-labelledby="edu-heading">
+    <div class="container">
+      <h2 id="edu-heading" class="section-title">Education</h2>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Texas A&amp;M University — M.S. Management Information Systems</h3>
+          <p class="card-text">GPA: 3.86 / 4.00 · May 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section fade-in" aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 id="contact-heading" class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:prapthi.belman@tamu.edu" aria-label="Email Prapthi">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">prapthi.belman@tamu.edu</span>
+        </a>
+        <a class="contact-card" href="tel:+19795759773" aria-label="Call Prapthi">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">(979) 575-9773</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/belman-prapthi" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">linkedin.com/in/belman-prapthi</span>
+        </a>
+        <a class="contact-card" href="https://github.com/prapthibelman0614" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/prapthibelman0614</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Prapthi Belman · Built with HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
