@@ -1,217 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prapthi Belman | Front-End Developer & UI/UX Designer</title>
-  <meta name="description" content="Portfolio of Prapthi Belman — Front-End Developer & UI/UX Designer. Projects, experience, and contact information." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Prapthi Belman — Product Manager, Data Analyst, and Full-Stack Engineer. Graduate student at Texas A&M Mays Business School."/>
+  <title>Prapthi Belman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navbar" aria-label="Primary">
-    <div class="nav-inner container">
-      <a class="brand" href="#hero" aria-label="Go to home">PB</a>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="navToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navbarMenu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div id="navbarMenu" class="nav-menu container" role="dialog" aria-modal="true" aria-labelledby="navToggle">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="/index.html" class="nav-brand">Prapthi Belman</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <header id="hero" class="section hero fade-in" role="banner">
-    <div class="container hero-inner">
-      <h1 class="hero-title">Prapthi Belman</h1>
-      <p class="hero-subtitle">Front-End Developer & UI/UX Designer</p>
-      <p class="hero-blurb">
-        Graduate student at Texas A&amp;M (MIS, 3.86 GPA) with experience in full-stack web development,
-        UX optimization, and product strategy. I build accessible, performant, and delightful web experiences.
-      </p>
-      <div class="hero-cta">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn ghost" href="#contact">Contact Me</a>
+<header class="hero">
+  <div class="wrap">
+    <p class="hero-eyebrow fade-up delay-1">M.S. MIS · Texas A&amp;M · Mays Business School</p>
+    <h1 class="hero-title fade-up delay-2">
+      Building products at the<br>
+      intersection of <em>software,</em><br>
+      data &amp; strategy.
+    </h1>
+    <p class="hero-sub fade-up delay-3">
+      I'm Prapthi — a product manager, data analyst, and full-stack engineer. I turn messy problems into clean systems and research into decisions that ship.
+    </p>
+    <div class="hero-rule fade-up delay-4"></div>
+    <div class="ticker-wrap fade-up delay-5">
+      <div class="ticker-track" id="skillsTrack">
+        <span class="ticker-chunk">
+          <span class="skill-pill">Product Management</span><span class="skill-pill">ASP.NET Core</span><span class="skill-pill">C# &amp; EF Core</span><span class="skill-pill">SQL &amp; MariaDB</span><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">AWS</span><span class="skill-pill">Tableau</span><span class="skill-pill">User Research</span><span class="skill-pill">Data Analytics</span><span class="skill-pill">NLP &amp; ML</span><span class="skill-pill">Git &amp; GitHub</span><span class="skill-pill">WCAG Accessibility</span><span class="skill-pill">Agile &amp; Scrum</span>
+        </span>
+        <span class="ticker-chunk" aria-hidden="true">
+          <span class="skill-pill">Product Management</span><span class="skill-pill">ASP.NET Core</span><span class="skill-pill">C# &amp; EF Core</span><span class="skill-pill">SQL &amp; MariaDB</span><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">AWS</span><span class="skill-pill">Tableau</span><span class="skill-pill">User Research</span><span class="skill-pill">Data Analytics</span><span class="skill-pill">NLP &amp; ML</span><span class="skill-pill">Git &amp; GitHub</span><span class="skill-pill">WCAG Accessibility</span><span class="skill-pill">Agile &amp; Scrum</span>
+        </span>
+        <span class="ticker-chunk" aria-hidden="true">
+          <span class="skill-pill">Product Management</span><span class="skill-pill">ASP.NET Core</span><span class="skill-pill">C# &amp; EF Core</span><span class="skill-pill">SQL &amp; MariaDB</span><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">AWS</span><span class="skill-pill">Tableau</span><span class="skill-pill">User Research</span><span class="skill-pill">Data Analytics</span><span class="skill-pill">NLP &amp; ML</span><span class="skill-pill">Git &amp; GitHub</span><span class="skill-pill">WCAG Accessibility</span><span class="skill-pill">Agile &amp; Scrum</span>
+        </span>
       </div>
     </div>
-  </header>
-
-  <!-- Skills -->
-  <section id="skills" class="section fade-in" aria-labelledby="skills-heading">
-    <div class="container">
-      <h2 id="skills-heading" class="section-title">Skills</h2>
-
-      <h3 class="group-title">Product &amp; PM</h3>
-      <ul class="pill-list">
-        <li>Requirements Gathering</li>
-        <li>Agile (Scrum/Kanban)</li>
-        <li>User Research</li>
-        <li>Accessibility (WCAG 2.1)</li>
-        <li>SEO</li>
-        <li>A/B Thinking &amp; KPIs</li>
-        <li>Jira · Confluence · Notion</li>
-        <li>Figma · Adobe</li>
-      </ul>
-
-      <h3 class="group-title">Technical</h3>
-      <ul class="pill-list">
-        <li>HTML5 · CSS3 · JavaScript</li>
-        <li>React · Angular · Bootstrap</li>
-        <li>SQL · NoSQL</li>
-        <li>ASP.NET Core · EF Core</li>
-        <li>AWS · CI/CD · Git</li>
-        <li>Docker · Kubernetes</li>
-        <li>WordPress · WP Engine</li>
-      </ul>
+    <div class="filter-bar fade-up delay-5">
+      <button class="filter-btn active" data-filter="all">All work</button>
+      <button class="filter-btn" data-filter="pm">Product / PM</button>
+      <button class="filter-btn" data-filter="data">Data &amp; Analytics</button>
+      <button class="filter-btn" data-filter="swe">Software Engineering</button>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- Projects -->
-  <section id="projects" class="section fade-in" aria-labelledby="projects-heading">
-    <div class="container">
-      <h2 id="projects-heading" class="section-title">Projects</h2>
-
-      <article class="card project">
-        <div class="card-body">
-          <h3 class="card-title">Digital Product Strategy &amp; MVP Planning</h3>
-          <p class="card-text">
-            Built a product canvas covering value propositions, user journeys, and MVP logic to guide cross-functional
-            delivery and align teams on outcomes.
-          </p>
-          <!-- <a class="card-link" href="#" target="_blank" rel="noopener">Live Demo</a> -->
-          <!-- <a class="card-link" href="#" target="_blank" rel="noopener">GitHub</a> -->
-        </div>
+<section id="projects" class="projects-section">
+  <div class="wrap">
+    <div class="projects-header">
+      <div><p class="section-label">Selected work</p><h2 class="section-title">Projects</h2></div>
+      <span class="project-count">6 projects</span>
+    </div>
+    <div class="project-grid">
+      <article class="project-card pm data">
+        <p class="card-cat">Product · Data</p>
+        <h3 class="card-title">EMScribe360</h3>
+        <p class="card-tagline">More Care, Less Paperwork</p>
+        <p class="card-desc">Hands-free, offline-first voice capture that turns real-time EMS events into a structured ePCR narrative — built to reduce documentation burden without sacrificing accuracy.</p>
+        <a href="projects/EMScribe360.html" class="card-link">View case study <span>→</span></a>
       </article>
-
-      <article class="card project">
-        <div class="card-body">
-          <h3 class="card-title">POS System Implementation &amp; Optimization</h3>
-          <p class="card-text">
-            Deployed a POS integrating MariaDB &amp; MongoDB; automated ETL for 10,000+ monthly transactions and
-            improved reporting accuracy by 25%.
-          </p>
-        </div>
+      <article class="project-card data swe">
+        <p class="card-cat">Data Engineering</p>
+        <h3 class="card-title">Point-of-Sale Data Pipeline</h3>
+        <p class="card-tagline">75% faster reporting</p>
+        <p class="card-desc">Integrated structured and unstructured data sources, built automated ETL processes and Tableau dashboards — improving reporting accuracy by 25% for a retail client.</p>
+        <a href="projects/pos-data-pipeline.html" class="card-link">View case study <span>→</span></a>
       </article>
-
-      <article class="card project">
-        <div class="card-body">
-          <h3 class="card-title">Business Continuity &amp; Project Risk Management</h3>
-          <p class="card-text">
-            Authored DR/BC plans with Gantt &amp; PERT schedules; implemented risk monitoring to ensure ~99% uptime and
-            reliable delivery under disruptions.
-          </p>
-        </div>
+      <article class="project-card swe data">
+        <p class="card-cat">Data Analytics · NLP</p>
+        <h3 class="card-title">Pink Slip Prophets</h3>
+        <p class="card-tagline">Decoding Global Layoffs</p>
+        <p class="card-desc">Analyzed 3,600+ layoff events using web scraping, local LLMs, and ML clustering to surface patterns across industries, funding stages, and economic cycles.</p>
+        <a href="projects/PinkSlipProphets.html" class="card-link">View case study <span>→</span></a>
       </article>
-
-      <article class="card project">
-        <div class="card-body">
-          <h3 class="card-title">Software Requirements Specification (SRS)</h3>
-          <p class="card-text">
-            Wrote comprehensive SRS for ONIX data transformation &amp; Print-on-Demand workflows, defining functional
-            and non-functional requirements and system architecture.
-          </p>
-        </div>
+      <article class="project-card pm swe">
+        <p class="card-cat">Product Strategy · Consulting</p>
+        <h3 class="card-title">S5ive Productions</h3>
+        <p class="card-tagline">NIL &amp; Recruiting Ecosystem</p>
+        <p class="card-desc">Real-client consulting engagement for a sports media startup. Delivered business model analysis, operational diagnosis, and a scaling roadmap to leadership.</p>
+        <a href="projects/S5Productions.html" class="card-link">View case study <span>→</span></a>
+      </article>
+      <article class="project-card data pm">
+        <p class="card-cat">Product · Systems Design</p>
+        <h3 class="card-title">DeliverEase</h3>
+        <p class="card-tagline">Product Canvas &amp; System Analysis</p>
+        <p class="card-desc">Designed a comparison-first food delivery app concept — personas, user flows, requirements, wireframes, and feasibility analysis from scratch.</p>
+        <a href="projects/DelivereaseProductCanvas.html" class="card-link">View case study <span>→</span></a>
+      </article>
+      <article class="project-card pm">
+        <p class="card-cat">UX Research · Accessibility</p>
+        <h3 class="card-title">Accessibility Audit</h3>
+        <p class="card-tagline">WCAG 2.1 Compliance</p>
+        <p class="card-desc">Conducted 8-participant usability study and WCAG AA audit for an e-commerce platform. Delivered a prioritized recommendation report projected to cut checkout abandonment by 18%.</p>
+        <a href="projects/accessibility-audit.html" class="card-link">View case study <span>→</span></a>
       </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Experience -->
-  <section id="experience" class="section fade-in" aria-labelledby="exp-heading">
-    <div class="container">
-      <h2 id="exp-heading" class="section-title">Experience</h2>
+<section id="about" class="about-section">
+  <div class="wrap about-inner">
+    <div class="about-left">
+      <p class="section-label">Background</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-right">
+      <div class="about-stats">
+        <div class="stat"><p class="stat-num">3+</p><p class="stat-label">Years engineering at Cognizant</p></div>
+        <div class="stat"><p class="stat-num">60+</p><p class="stat-label">Stakeholder interviews (EMScribe)</p></div>
+        <div class="stat"><p class="stat-num">M.S.</p><p class="stat-label">Management Information Systems, TAMU</p></div>
+        <div class="stat"><p class="stat-num">6</p><p class="stat-label">Case studies shipped</p></div>
+      </div>
+      <p class="about-body">I'm an international graduate student who loves solving complex problems at the intersection of technology and business. My experience as a Full-Stack Engineer at Cognizant combined with graduate work at Mays Business School gives me a rare ability to translate between engineering depth and product strategy.</p>
+      <p class="about-body">I enjoy bringing teams together, conducting research to understand user needs, and translating insights into products that ship. When I'm not building or analysing, you'll find me sketching interface ideas or exploring new cuisines.</p>
+      <a href="resume.pdf" class="btn">Download Résumé →</a>
+    </div>
+  </div>
+</section>
 
-      <div class="timeline">
-        <article class="tl-item">
-          <h3 class="tl-role">Graduate Assistant Teaching · Texas A&amp;M University</h3>
-          <p class="tl-meta">College Station, TX · Present</p>
-          <ul class="tl-points">
-            <li>Guided 500+ students building web apps (SQL, ASP.NET Core MVC, EF Core) with agile, phase-based delivery.</li>
-            <li>Raised test scores by 14% via HTML/CSS/JS study guides, interactive discussions, and targeted feedback.</li>
-          </ul>
-        </article>
-
-        <article class="tl-item">
-          <h3 class="tl-role">Web Student Technician · Mays Business School</h3>
-          <p class="tl-meta">College Station, TX · Aug 2025</p>
-          <ul class="tl-points">
-            <li>Audited 700+ pages for UX, accessibility (WCAG 2.1), and SEO; boosted findability by 18%.</li>
-            <li>Owned web ops: prioritized 30+ projects, triaged issues, coordinated cross-functional contributors.</li>
-            <li>Troubleshot plugin/PHP issues; delivered updates on schedule.</li>
-          </ul>
-        </article>
-
-        <article class="tl-item">
-          <h3 class="tl-role">Full-Stack Software Engineer · Cognizant</h3>
-          <p class="tl-meta">Bengaluru, India · May 2024</p>
-          <ul class="tl-points">
-            <li>Built responsive UIs and optimized databases; +12% user engagement, +18% system performance.</li>
-            <li>Converted complex workflows into client-ready docs; −15% delivery timelines, fewer long-term defects.</li>
-          </ul>
-        </article>
+<section id="contact" class="contact-section">
+  <div class="wrap contact-inner">
+    <div class="contact-left">
+      <p class="section-label">Let's talk</p>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-intro">Have a project in mind, want to collaborate, or just want to connect? I'd love to hear from you.</p>
+      <div class="social-row">
+        <a href="mailto:prapthibelman@tamu.edu" class="social-link"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/prapthibelman" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/prapthibelman0614" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
-  </section>
-
-  <!-- Education -->
-  <section class="section fade-in" aria-labelledby="edu-heading">
-    <div class="container">
-      <h2 id="edu-heading" class="section-title">Education</h2>
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Texas A&amp;M University — M.S. Management Information Systems</h3>
-          <p class="card-text">GPA: 3.86 / 4.00 · May 2026</p>
-        </div>
-      </div>
+    <div class="contact-right">
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your full name" required/></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="your@email.com" required/></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your project or just say hello..." required></textarea></div>
+        <button type="submit" class="btn btn-light">Send Message →</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="section fade-in" aria-labelledby="contact-heading">
-    <div class="container">
-      <h2 id="contact-heading" class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:prapthi.belman@tamu.edu" aria-label="Email Prapthi">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">prapthi.belman@tamu.edu</span>
-        </a>
-        <a class="contact-card" href="tel:+19795759773" aria-label="Call Prapthi">
-          <span class="contact-label">Phone</span>
-          <span class="contact-value">(979) 575-9773</span>
-        </a>
-        <a class="contact-card" href="https://linkedin.com/in/belman-prapthi" target="_blank" rel="noopener">
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">linkedin.com/in/belman-prapthi</span>
-        </a>
-        <a class="contact-card" href="https://github.com/prapthibelman0614" target="_blank" rel="noopener">
-          <span class="contact-label">GitHub</span>
-          <span class="contact-value">github.com/prapthibelman0614</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Prapthi Belman · Built with HTML, CSS &amp; JS</p>
-    </div>
-  </footer>
-
-  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
-
-  <script src="script.js"></script>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p class="footer-copy">© 2026 Prapthi Belman. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="mailto:prapthibelman@tamu.edu">Email</a>
+      <a href="https://www.linkedin.com/in/prapthibelman" target="_blank">LinkedIn</a>
+      <a href="https://github.com/prapthibelman0614" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
