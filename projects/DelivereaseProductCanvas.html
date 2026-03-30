@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeliverEase — Prapthi Belman</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .cs-embed-wrap { margin: 2rem 0 0.5rem; }
+    .cs-embed-inner {
+      position: relative; width: 100%; aspect-ratio: 16/9;
+      border: 1px solid rgba(0,0,0,0.1); border-radius: 8px;
+      overflow: hidden; background: #f5f5f5;
+    }
+    .cs-embed-inner iframe { width: 100%; height: 100%; display: block; border: none; }
+    .cs-embed-cta { margin-top: 0.6rem; text-align: right; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+<nav class="cs-nav">
+  <div class="wrap">
+    <a href="../index.html" class="cs-back">← Back to Portfolio</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <div class="cs-cats">
+      <span class="cs-cat">Systems Analysis</span>
+      <span class="cs-cat">Product Design</span>
+      <span class="cs-cat">UX</span>
+    </div>
+    <h1 class="cs-title">DeliverEase</h1>
+    <p class="cs-subtitle">A comparison-first food delivery app — systems analysis and product canvas from scratch</p>
+  </div>
+</header>
+
+<main class="cs-body">
+  <div class="wrap cs-content">
+
+    <h2>Concept</h2>
+    <p>DeliverEase is a concept mobile app that helps users compare delivery fees, ETA, and promotions across multiple food delivery platforms in one place — reducing decision fatigue and app-switching while making ordering faster and more cost-effective.</p>
+    <p><strong>Course:</strong> Systems Analysis &amp; Design &nbsp;|&nbsp; <strong>Focus:</strong> Requirements → User Flow → Mockups &nbsp;|&nbsp; <strong>Deliverables:</strong> Personas, Epic, User Stories, Workflow, UI Mockups</p>
+
+    <h2>Problem</h2>
+    <ul>
+      <li><strong>App-switching tax:</strong> users manually compare platforms, which is slow and frustrating.</li>
+      <li><strong>Unclear total cost:</strong> fees and promotions vary by platform and change frequently.</li>
+      <li><strong>Decision fatigue:</strong> too many options, too little clarity at the point of decision.</li>
+    </ul>
+
+    <h2>Solution</h2>
+    <ul>
+      <li>Search a restaurant or dish once (with fuzzy search support).</li>
+      <li>See a side-by-side comparison across platforms: delivery fees, ETA, active promotions.</li>
+      <li>Pick the best option, then hand off to the selected platform for checkout.</li>
+    </ul>
+
+    <h2>My Role</h2>
+    <ul>
+      <li>Translated the concept into system requirements (epic, user stories with acceptance criteria).</li>
+      <li>Created user personas and mapped the end-to-end user journey.</li>
+      <li>Designed workflow, storyboard, and UI mockups to communicate intended behavior clearly.</li>
+      <li>Iterated on feasibility improvements to keep the concept realistic without diluting the core value.</li>
+    </ul>
+
+    <h2>Example User Stories</h2>
+    <ul>
+      <li><strong>Search:</strong> As a user, I want to search restaurants or menu items so I can quickly find what I'm craving. <em>Results populate within 2 seconds; supports partial keywords.</em></li>
+      <li><strong>Fuzzy matching:</strong> As a user, I want suggestions even if my search term isn't exact. <em>Top suggestions appear for typos; up to 10 relevant results shown.</em></li>
+      <li><strong>Comparison:</strong> As a user, I want to compare delivery fees, ETA, and promotions across platforms. <em>Comparison loads within 3 seconds; sorting updates within 1 second.</em></li>
+    </ul>
+
+    <h2>System Architecture</h2>
+    <ul>
+      <li><strong>Mobile app:</strong> Search, compare, redirect (iOS/Android)</li>
+      <li><strong>Backend API:</strong> Auth, aggregation, caching</li>
+      <li><strong>Data store:</strong> User preferences, search history, redirect logs, metrics</li>
+      <li><strong>3rd-party sources:</strong> Official delivery platform APIs; public pricing/ETA data</li>
+    </ul>
+
+    <h2>Highlights</h2>
+    <ul>
+      <li>Measurable requirements: concrete response time targets for search and sorting.</li>
+      <li>Clear value proposition: faster decisions with potential cost savings quantified.</li>
+      <li>Full product thinking: competitive landscape analysis and freemium revenue model included.</li>
+    </ul>
+
+    <h2>Presentation Walkthrough</h2>
+    <p>Full slide deck covering problem framing, user stories, system architecture, and UI mockups.</p>
+    <div class="cs-embed-wrap">
+      <div class="cs-embed-inner">
+        <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vSfaTT4et8J_wcS1Xv3S1dFCJ4U6yC7NYnJcx7R5pMZiI3UYPuRroENe3bQkh9UHKmDpykSX7mlS-4f/embed?start=false&loop=false&delayms=5000"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          title="DeliverEase — Project Walkthrough">
+        </iframe>
+      </div>
+      <p class="cs-embed-cta">
+        <a href="https://docs.google.com/presentation/d/1yNavR4fdUoSYZrSqT3b7Na_JlIDerQHtwWnn8zhjmF4/edit?usp=sharing" target="_blank" rel="noopener">Open in Google Slides ↗</a>
+      </p>
+    </div>
+
+    <h2>Artifacts</h2>
+    <ul>
+      <li><a href="https://docs.google.com/presentation/d/1yNavR4fdUoSYZrSqT3b7Na_JlIDerQHtwWnn8zhjmF4/edit?usp=sharing" target="_blank" rel="noopener">View Slide Deck</a></li>
+    </ul>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Prapthi Belman</p>
+    <p class="footer-links">
+      <a href="mailto:prapthibelman@tamu.edu">Email</a> ·
+      <a href="https://www.linkedin.com/in/prapthibelman" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/prapthibelman0614" target="_blank">GitHub</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

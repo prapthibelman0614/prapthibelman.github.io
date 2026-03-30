@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Accessibility Audit — Prapthi Belman</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="cs-nav"><div class="wrap"><a href="../index.html" class="cs-back">← Back to Portfolio</a></div></nav>
+<header class="cs-hero"><div class="wrap">
+  <div class="cs-cats"><span class="cs-cat">UX Research</span><span class="cs-cat">Accessibility</span><span class="cs-cat">Product</span></div>
+  <h1 class="cs-title">User Research &amp; Accessibility Audit</h1>
+  <p class="cs-subtitle">Making an e-commerce platform usable for everyone</p>
+</div></header>
+<main class="cs-body"><div class="wrap cs-content">
+  <h2>Context</h2>
+  <p>An e-commerce platform had received user complaints about confusing navigation and checkout friction. The product team suspected accessibility gaps were contributing to higher-than-average drop-off rates among older and differently-abled users.</p>
+  <h2>My Role</h2>
+  <p>UX researcher and auditor — planned and facilitated usability sessions, conducted WCAG 2.1 Level AA compliance review, and delivered a prioritized recommendation report to the product team.</p>
+  <h2>Approach</h2>
+  <p>I recruited 8 participants spanning age and ability groups and ran moderated usability tests on the checkout and product discovery flows. In parallel, I conducted a systematic WCAG 2.1 audit using axe DevTools and manual keyboard/screen reader testing (NVDA + VoiceOver).</p>
+  <h2>Key Findings</h2>
+  <ul>
+    <li>7 of 8 participants struggled with the multi-step checkout — unclear progress indicators caused abandonment at step 3.</li>
+    <li>Colour contrast ratios failed on 12 interactive elements, violating WCAG 1.4.3.</li>
+    <li>Missing ARIA labels on icon-only buttons made the cart inaccessible to screen readers.</li>
+    <li>Form error messages were announced too late in the reading order, confusing keyboard-only users.</li>
+  </ul>
+  <h2>Recommendations Delivered</h2>
+  <ul>
+    <li>Redesign checkout progress indicator with clear step labels and estimated time remaining.</li>
+    <li>Update colour tokens to meet 4.5:1 contrast minimum site-wide.</li>
+    <li>Add descriptive <code>aria-label</code> attributes to all icon-only buttons.</li>
+    <li>Move inline error messages directly below each field and link them via <code>aria-describedby</code>.</li>
+  </ul>
+  <h2>Impact</h2>
+  <p>The audit report was accepted in full and prioritised for the next two-sprint cycle. The checkout redesign alone was projected to <strong>reduce abandonment at step 3 by 18%</strong>.</p>
+</div></main>
+<footer class="cs-footer"><div class="wrap footer-inner">
+  <p class="footer-copy">© 2026 Prapthi Belman</p>
+  <nav class="footer-links"><a href="../index.html">Portfolio</a><a href="mailto:prapthibelman@tamu.edu">Email</a><a href="https://www.linkedin.com/in/prapthibelman" target="_blank">LinkedIn</a></nav>
+</div></footer>
+</body></html>

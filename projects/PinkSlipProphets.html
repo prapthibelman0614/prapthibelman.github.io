@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pink Slip Prophets — Prapthi Belman</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="cs-nav"><div class="wrap"><a href="../index.html" class="cs-back">← Back to Portfolio</a></div></nav>
+<header class="cs-hero"><div class="wrap">
+  <div class="cs-cats"><span class="cs-cat">Data Mining</span><span class="cs-cat">NLP</span><span class="cs-cat">Machine Learning</span></div>
+  <h1 class="cs-title">Pink Slip Prophets</h1>
+  <p class="cs-subtitle">Decoding the root causes of 3,600+ global layoff events with NLP, clustering, and predictive modeling</p>
+</div></header>
+<main class="cs-body"><div class="wrap cs-content">
+  <h2>Overview</h2>
+  <p>Layoff data is usually summarized as headlines and counts — but the root causes are buried in vague corporate language. We decoded those reasons systematically, surfaced macro patterns, and tested whether layoffs show predictable structures across industries and economic cycles.</p>
+  <p><strong>Key question:</strong> What are the dominant drivers of layoffs globally, and how do they vary by industry, funding stage, and time?</p>
+  <h2>Why This Is Hard</h2>
+  <p>Real-world layoff reasons are inconsistent ("restructuring", "strategic realignment", "cost optimization"), noisy, and entirely unstructured. No off-the-shelf classifier exists — the signal had to be engineered from scratch.</p>
+  <h2>My Contributions</h2>
+  <ul>
+    <li><strong>Pipeline architecture:</strong> Designed the end-to-end workflow and implemented preprocessing, normalization, and feature engineering for modeling.</li>
+    <li><strong>NLP reason extraction:</strong> Implemented web scraping and local LLM extraction (Ollama/Qwen2.5 7B) with KeyBERT keyword mining, then standardized reasons via synonym normalization.</li>
+    <li><strong>Modeling and clustering:</strong> Built clustering experiments and trained predictive models (classification and regression) with evaluation and feature importance analysis.</li>
+  </ul>
+  <h2>Data Pipeline</h2>
+  <ul>
+    <li><strong>Collect:</strong> Ingest 3,600+ layoff events with metadata — company, industry, stage, country, date, percentage laid off.</li>
+    <li><strong>Clean and explore:</strong> Handle missing fields, standardize numeric formats, validate distributions and outliers.</li>
+    <li><strong>Extract reasons:</strong> Scrape linked sources → filter relevant sentences → local LLM summarizes root causes.</li>
+    <li><strong>Normalize text:</strong> Merge synonyms and corporate euphemisms into consistent reason categories.</li>
+    <li><strong>Cluster and predict:</strong> Cluster layoff behavior; train ML models to forecast severity and magnitude.</li>
+  </ul>
+  <h2>Technical Stack</h2>
+  <ul>
+    <li>pandas, numpy, BeautifulSoup (scraping)</li>
+    <li>KeyBERT, SentenceTransformers (NLP)</li>
+    <li>Ollama / Qwen2.5 7B (local LLM reason extraction)</li>
+    <li>scikit-learn (KMeans, Random Forest, Gradient Boosting)</li>
+    <li>Tableau (interactive dashboard)</li>
+  </ul>
+  <h2>Key Findings</h2>
+  <ul>
+    <li><strong>Funding ≠ stability.</strong> Mass layoffs often occur even after fresh funding rounds — not only during financial distress.</li>
+    <li><strong>"Restructuring" is an umbrella label</strong> that frequently masks multiple distinct operational root causes.</li>
+    <li><strong>Fiscal rhythm:</strong> Layoffs show seasonality aligned with corporate planning cycles, with notable Q1 and Q4 concentration.</li>
+    <li><strong>Industry specificity:</strong> Root causes differ meaningfully by sector — demand shifts vs. cost cutting vs. product strategy pivots.</li>
+  </ul>
+  <h2>Interactive Dashboard</h2>
+  <p>Explore the full layoff dataset — filter by industry, year, and country. Built in Tableau Public from 3,642 layoff events spanning 2020–2024.</p>
+  <div class="cs-embed-wrap">
+    <div class="cs-embed-inner">
+      <iframe src="https://public.tableau.com/views/PinkSlipProphets-LayoffAnalysis/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link&:embed=true&:showVizHome=no&:tabs=no&:toolbar=yes" width="100%" height="100%" frameborder="0" allowfullscreen title="Pink Slip Prophets — Layoff Analysis Dashboard"></iframe>
+    </div>
+    <p class="cs-embed-cta"><a href="https://public.tableau.com/app/profile/prapthi.belman/viz/PinkSlipProphets-LayoffAnalysis/Dashboard1" target="_blank" rel="noopener">Open full dashboard ↗</a></p>
+  </div>
+  <h2>Artifacts</h2>
+  <ul>
+    <li><a href="https://public.tableau.com/app/profile/prapthi.belman/viz/PinkSlipProphets-LayoffAnalysis/Dashboard1" target="_blank" rel="noopener">Interactive Tableau Dashboard</a></li>
+    <li><a href="https://github.com/prapthibelman0614" target="_blank" rel="noopener">GitHub Repository</a></li>
+  </ul>
+</div></main>
+<footer class="cs-footer"><div class="wrap footer-inner">
+  <p class="footer-copy">© 2026 Prapthi Belman</p>
+  <nav class="footer-links"><a href="../index.html">Portfolio</a><a href="mailto:prapthibelman@tamu.edu">Email</a><a href="https://www.linkedin.com/in/prapthibelman" target="_blank">LinkedIn</a></nav>
+</div></footer>
+</body></html>
